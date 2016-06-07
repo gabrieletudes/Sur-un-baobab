@@ -27,35 +27,35 @@
             <nav class="main-nav">
                 <ul class="main-nav_list">
                     <li class="main-nav__elt">
-                        <a class="main-nav__link" href="<?php echo home_url()?>">Baobab</a>
+                        <a class="main-nav__link main-nav__link--icon-home" href="<?php echo home_url()?>">Baobab</a>
                     </li>
                     <li class="main-nav__elt">
-                        <a class="main-nav__link" href="<?php the_permalink(6);?>">
+                        <a class="main-nav__link main-nav__link--icon-posts" href="<?php the_permalink(6);?>">
                             <?php _e('Actualites','b');?>
                         </a>
                     </li>
                     <li class="main-nav__elt">
-                        <a class="main-nav__link" href="<?php the_permalink(16);?>">
+                        <a class="main-nav__link main-nav__link--icon-about" href="<?php the_permalink(16);?>">
                             <?php _e('À Propos','b');?>
                         </a>
                     </li>
                     <li class="main-nav__elt">
-                        <a class="main-nav__link" href="<?php the_permalink(18);?>">
+                        <a class="main-nav__link main-nav__link--icon-short" href="<?php the_permalink(18);?>">
                             <?php _e('Courts-métrages','b');?>
                         </a>
                     </li>
                     <li class="main-nav__elt">
-                        <a class="main-nav__link" href="<?php the_permalink(20);?>">
+                        <a class="main-nav__link main-nav__link--icon-tuto" href="<?php the_permalink(20);?>">
                             <?php _e('Anime toi-même','b');?>
                         </a>
                     </li>
                     <li class="main-nav__elt">
-                        <a class="main-nav__link" href="<?php the_permalink(22);?>">
+                        <a class="main-nav__link main-nav__link--icon-donation" href="<?php the_permalink(22);?>">
                             <?php _e('Nous soutenir','b');?>
                         </a>
                     </li>
                     <li class="main-nav__elt">
-                        <a class="main-nav__link" href="<?php the_permalink(24);?>">
+                        <a class="main-nav__link main-nav__link--icon-contact" href="<?php the_permalink(24);?>">
                             <?php _e('Contact','b');?>
                         </a>
                     </li>
