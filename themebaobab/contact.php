@@ -17,26 +17,58 @@ get_header();
 </div>
 </header>
 <main>
-    <section class="diffuser section--second-color">
+    <section class="contact-page section--first-clr">
+        <div class="contact-page__container">
+            <div class="contact-page__followus">
+                <h3 class="contact-page__heading contact-page__heading-contact section__heading--alfaslab">Contact</h3>
+                <p>
+                    <?php the_field('contactpage_address') ?>
+                </p>
+                <ul class="contact-page-social">
+                    <li class="contact-page-social__elt">
+                        <a href="#" class="contact--icon-face contact--icon-hover contact--icon-alone">
+                            <span class="contact--screen-reader"><?php _e('Suit nous sur Facebook','b');?></span>
+                        </a>
+                    </li>
+                    <li class="contact-page-social__elt">
+                        <a href="#" class="contact--icon-tweet contact--icon-hover contact--icon-alone">
+                            <span class="contact--screen-reader"><?php _e('Suit nous sur Twitter','b');?></span>
+                        </a>
+                    </li>
+                    <li class="contact-page-social__elt">
+                        <a href="#" class="contact--icon-insta contact--icon-hover contact--icon-alone">
+                            <span class="contact--screen-reader"><?php _e('Suit nous sur Instagram','b');?></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="contact-page__carte contact-page__list">
+                <li>
+                    <h4 class="contact-page__heading">
+                        <?php _e('Lieu ou nous nous trouvons actuellement','b');?>
+                    </h4>
+                </li>
+                <li class="carte__image">
+                    <img src="<?php the_field('contactpage_map') ?>" alt="image">
+                </li>
+            </ul>
+            <ul class="contact-page-info">
+                <li class="contact-page-info__elt contact--icon-email">
+                    <?php the_field('contactpage_email');?>
+                </li>
+                <li class="contact-page-info__elt contact--icon-waap">
+                    <?php the_field('contactpage_what'); ?>
+                </li>
+                <li class="contact-page-info__elt contact--icon-tel">
+                    <?php the_field('contactpage_tel'); ?>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="diffuser section--third-bcg">
         <div class="diffuser__container">
-            <h3 class="diffuser__heading section__heading--blue">Une remarque, une idée ou une sugestion ?</h3>
-            <form class="form">
-                <div class="form__nom">
-                    <label class="form__label" for="nom-prenom">Nom et Prenom:</label>
-                    <input class="form__input" type="text" id="nom-prenom" name="nom-prenom" placeholder="ex. Sarah Van Hout">
-                </div>
-                <div class="form__email">
-                    <label class="form__label" for="email">Email *:</label>
-                    <input class="form__input form__input-email" type="email" id="email" name="email" placeholder="ex. mon@email.com">
-                </div>
-                <div class="form__message">
-                    <label class="form__label" for="msg">Message:</label>
-                    <textarea class="form__textarea" id="msg" name="user_message" placeholder="Ecivez ici votre message..."></textarea>
-                </div>
-                <div class="button">
-                    <button class="form__submit vieuw__link cta--medium cta--hover vieuw__link--clear-both" type="submit">Envoyer le message</button>
-                </div>
-            </form>
+            <h3 class="diffuser__heading section__heading--blue"><?php _e('Une remarque, une idée ou une sugestion ?','b');?></h3>
+            <?php echo do_shortcode( '[contact-form-7 id="9" title="Envie de diffuser cet film"]' ); ?>
         </div>
     </section>
 </main>

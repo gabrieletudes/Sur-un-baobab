@@ -17,9 +17,9 @@ get_header();
 </div>
 </header>
 <main>
-<section class="courts section--first-color">
+<section class="courts section--third-bcg">
     <div class="articles__container">
-            <h3 class="courts__heading section__heading section__heading--weasel ">Nos court-métrages</h3>
+            <h3 class="courts__heading section__heading section__heading--alfaslab ">Nos court-métrages</h3>
             <?php
             $posts = new WP_Query( ['posts_per_page' => -1, 'post_type' => 'project'] );
             if ( $posts->have_posts() ): while ( $posts->have_posts() ): $posts->the_post();
@@ -47,37 +47,13 @@ get_header();
     <?php endwhile; endif; ?>
     </div>
 </section>
-<section class="diffuser section--second-color">
+<section class="diffuser section--third-bcg">
     <div class="diffuser__container">
         <h3 class="diffuser__heading section__heading--blue">Envie de diffuser un de nos court-metrages ?</h3>
         <div class="diffuser__content article__p--margin">
             <p>Si vous avez envie de diffuser un des nos films, envoyez-nous un message et on vous contactera le plus vite possible.</p>
         </div>
-        <form class="form">
-            <div class="form__nom">
-                <label class="form__label" for="nom">Nom*:</label>
-                <input class="form__input" type="text" id="nom" name="nom" placeholder="ex. Sarah">
-            </div>
-
-            <div class="form__prenom">
-                <label class="form__label" for="prenom">Prenom:</label>
-                <input class="form__input" type="text" id="prenom" name="prenom" placeholder="ex. Van Hout">
-            </div>
-
-            <div class="form__email">
-                <label class="form__label" for="email">Email:</label>
-                <input class="form__input form__input-email" type="email" id="email" name="email" placeholder="ex. mon@email.com">
-            </div>
-
-            <div class="form__message">
-                <label class="form__label" for="msg">Message:</label>
-                <textarea class="form__textarea" id="msg" name="user_message" placeholder="Ecive ici votre message..."></textarea>
-            </div>
-
-            <div class="button">
-                <button class="form__submit vieuw__link cta--medium cta--hover vieuw__link--clear-both" type="submit">Envoyer le message</button>
-            </div>
-        </form>
+            <?php echo do_shortcode( '[contact-form-7 id="9" title="Envie de diffuser cet film"]' ); ?>
     </div>
 </section>
 </main>

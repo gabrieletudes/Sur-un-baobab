@@ -17,10 +17,10 @@ get_header();
 </div>
 </header>
 <main>
-            <section class="apropos section--third-color">
+            <section class="apropos section--third-bcg">
                 <div class="articles__container">
                     <article class="apropos-article">
-                        <h3 class="apropos-article__heading section__heading section__heading--weasel">Qui sommes nous ?</h3>
+                        <h3 class="apropos-article__heading section__heading section__heading--alfaslab">Qui sommes nous ?</h3>
                         <div class="apropos-article__content article__p--margin">
                             <?php the_field('aboutpage_aboutcontent');?>
                     </div>
@@ -30,10 +30,10 @@ get_header();
                     </article>
                 </div>
             </section>
-            <section class="projet section--first-color">
+            <section class="projet section--first-bcg">
                 <div class="articles__container">
                     <article class="apropos-article">
-                        <h3 class="apropos-article__heading section__heading section__heading--weasel">Notre Projet</h3>
+                        <h3 class="apropos-article__heading section__heading section__heading--alfaslab">Notre Projet</h3>
                         <div class="apropos-article__content article__p--margin">
                             <?php the_field('aboutpage_project');?>
                     </div>
@@ -41,15 +41,15 @@ get_header();
                         <img class="article__image" src="<?php echo get_template_directory_uri() . '/assets/img/photo-sfdp-009-medium.png';?>" alt="image">
                     </figure>
                     <div class="projet__links">
-                        <a class="cta cta--medium cta--blue cta--hover" href="<?php the_permalink('18');?>">Consulte les courts-métrages</a>
+                        <a class="cta cta--medium cta--blue cta--hover" href="<?php the_permalink('18');?>">Consulte nos courts-métrages</a>
                     <a class="cta cta--medium cta--yellow" href="<?php the_permalink('22');?>">Soutenez notre projet</a>
                     </div>
                     </article>
                 </div>
             </section>
-            <section class="gallery section--second-color">
+            <section class="gallery section--third-bcg">
                 <div class="section__container">
-                    <h3 class="section__heading">Gallerie Photos</h3>
+                    <h3 class="section__heading section__heading--alfaslab">Gallerie Photos</h3>
                     <ul class="gallery__list">
                         <li class="gallery__elt">
                             <img src="<?php echo get_template_directory_uri() .'/assets/img/imagegallery.png'?>" alt="" class="gallery__image">
