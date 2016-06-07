@@ -18,9 +18,9 @@ get_header();
 </div>
 </header>
 <main>
-            <section class="actualites">
+            <section class="actualites courts section--second-bcg">
                 <div class="section__container">
-                    <h3 class="section__heading section__heading--weasel">
+                    <h3 class="section__heading section__heading--alfaslab">
                         <?php _e('Dernières Actualites','b')?>
                     </h3>
                     <!-- Debut WP_QUERY -->
@@ -40,10 +40,10 @@ get_header();
                     </article>
                     <?php wp_reset_postdata(); ?>
                 <?php endwhile; endif; ?>
-                    <a class="vieuw__link cta--medium cta--blue cta--hover vieuw__link" href="<?php the_permalink('6');?>"><?php _e('Voir tout les actualites', 'b')?></a>
+                    <a class="vieuw__link cta--medium cta--blue cta--hover" href="<?php the_permalink('6');?>"><?php _e('Voir tout les actualites', 'b')?></a>
                 </div>
             </section>
-            <section class="articles section--third-color">
+            <section class="articles courts section--third-bcg">
                 <div class="articles__container">
                     <!-- Debut WP_QUERY -->
                     <?php
@@ -52,7 +52,7 @@ get_header();
                     ?>
                     <!-- Recup thumbnail et size -->
                     <article class="article">
-                        <h3 class="article__heading section__heading section__heading--blue">
+                        <h3 class="article__heading section__heading--blue">
                             <?php the_title();?>
                         </h3>
                         <p class="article__content">

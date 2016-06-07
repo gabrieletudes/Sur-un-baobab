@@ -16,10 +16,10 @@ get_header();
 </div>
 </header>
 <main>
-    <section class="tutoriels section--first-color">
+    <section class="tutoriels section--first-bcg">
         <div class="tutoriels__container">
             <article class="tutoriels-article">
-                <h3 class="tutoriels-article__heading section__heading section__heading--weasel">Description tutoriels</h3>
+                <h3 class="tutoriels-article__heading section__heading section__heading--alfaslab">Description tutoriels</h3>
                 <div class="tutoriels-article__content article__p--margin">
                     <?php the_field('animetoimemepage_generaldescription');?>
                 </div>
@@ -29,10 +29,10 @@ get_header();
             </article>
         </div>
     </section>
-    <section class="tutoriel section--third-color">
+    <section class="tutoriel section--third-bcg">
         <div class="tutoriels__container">
             <article class="tutoriel-article">
-                <h3 class="tutoriel-article__heading section__heading section__heading--weasel">Creation d’un mini-studio</h3>
+                <h3 class="tutoriel-article__heading section__heading--blue">Creation d’un mini-studio</h3>
                 <div class="tutoriel-article__content article__p--margin">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet.</p>
                 </div>
@@ -42,7 +42,7 @@ get_header();
                 </figure>
             </article>
             <article class="tutoriel-article">
-                <h3 class="tutoriel-article__heading section__heading section__heading--weasel">Dessine ton histoire</h3>
+                <h3 class="tutoriel-article__heading section__heading--blue">Dessine ton histoire</h3>
                 <div class="tutoriel-article__content article__p--margin">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet.</p>
                 </div>

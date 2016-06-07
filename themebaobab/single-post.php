@@ -20,10 +20,10 @@ get_header();
     </div>
     </header>
     <main>
-        <section class="actualites">
+        <section class="actualites courts section--second-bcg">
             <div class="section__container">
 
-                <h3 class="section__heading section__heading--weasel">Dernieres Actualites</h3>
+                <h3 class="section__heading section__heading--alfaslab">Dernieres Actualites</h3>
 
                 <!-- Debut WP_QUERY -->
             <?php
@@ -33,7 +33,7 @@ get_header();
                     <!-- Recup thumbnail et size -->
 
                     <article class="actualites__article">
-                        <h4 class="actualites__subheading">
+                        <h4 class="actualites__subheading section__heading--blue">
                             <?php the_title();?>
                         </h4>
                         <p class="actualites__descriptif">
@@ -46,7 +46,7 @@ get_header();
             <a class="vieuw__link cta--medium cta--blue cta--hover" href="<?php the_permalink('6');?>">Voir tout les actualites</a>
             </div>
         </section>
-        <section class="articles section--third-color">
+        <section class="articles section--third-bcg">
             <div class="articles__container">
                 <!-- Debut WP_QUERY -->
                 <?php
@@ -54,7 +54,7 @@ get_header();
                     if ( $posts->have_posts() ): $posts->current_post();
                 ?>
                     <article class="page-article">
-                        <h3 class="page-article__heading section__heading section__heading--blue">
+                        <h3 class="page-article__heading article__heading section__heading--blue">
                             <?php the_title();?>
                         </h3>
                         <div class="page-article__content article__p--margin">
