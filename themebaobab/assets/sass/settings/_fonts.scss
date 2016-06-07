@@ -1,0 +1,94 @@
+/*
+ * /sass/settings/_fonts.scss - Global fonts variables
+ * by Gabriel!
+ */
+//General font
+$textFont: Roboto, "Helvetica neuea" ,Helvetica, Arial, sans-serif;
+
+// Fontawesome
+@font-face {
+    font-family: 'Glyphs';
+    src: url('../fonts/fontawesome/fontawesome-webfont.eot');
+    src: url('../fonts/fontawesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/fontawesome/fontawesome-webfont.woff2') format('woff2'),
+    url('../fonts/fontawesome/fontawesome-webfont.woff') format('woff'),
+    url('../fonts/fontawesome/fontawesome-webfont.ttf') format('truetype'),
+    url('../fonts/fontawesome/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//alfaslab
+@font-face {
+    font-family: 'alfaslab';
+    src: url('../fonts/alfaslab/alfaslabone-regular-webfont.eot');
+    src: url('../fonts/alfaslab/alfaslabone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/alfaslab/alfaslabone-regular-webfont.woff2') format('woff2'),
+         url('../fonts/alfaslab/alfaslabone-regular-webfont.woff') format('woff'),
+         url('../fonts/alfaslab/alfaslabone-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+// Lora
+@font-face {
+    font-family: 'lorabold';
+    src: url('../fonts/lora/lora-bold-webfont.eot');
+    src: url('../fonts/lora/lora-bold-webfont.eot?#iefix')
+    format('embedded-opentype'),
+         url('../fonts/lora/lora-bold-webfont.woff2')
+         format('woff2'),
+         url('../fonts/lora/lora-bold-webfont.woff')
+         format('woff'),
+         url('../fonts/lora/lora-bold-webfont.ttf')
+         format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lorabolditalic';
+    src: url('../fonts/lora/lora-bolditalic-webfont.eot');
+    src: url('../fonts/lora/lora-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lora/lora-bolditalic-webfont.woff2')
+         format('woff2'),
+         url('../fonts/lora/lora-bolditalic-webfont.woff')
+         format('woff'),
+         url('../fonts/lora/lora-bolditalic-webfont.ttf')
+         format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'loraitalic';
+    src: url('../fonts/lora/lora-italic-webfont.eot');
+    src: url('../fonts/lora/lora-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lora/lora-italic-webfont.woff2')
+         format('woff2'),
+         url('../fonts/lora/lora-italic-webfont.woff')
+         format('woff'),
+         url('../fonts/lora/lora-italic-webfont.ttf')
+         format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'loraregular';
+    src: url('../fonts/lora/lora-regular-webfont.eot');
+    src: url('../fonts/lora/lora-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lora/lora-regular-webfont.woff2')
+         format('woff2'),
+         url('../fonts/lora/lora-regular-webfont.woff')
+         format('woff'),
+         url('../fonts/lora/lora-regular-webfont.ttf')
+         format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

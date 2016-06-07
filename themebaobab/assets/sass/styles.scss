@@ -1,0 +1,929 @@
+/* sass-intro
+ *
+ * /sass/styles.scss - Main stylesheet
+ * by Gabriel
+ */
+
+// Settings
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/size";
+
+// Tools
+//@import "tools/pixtorem";
+// Generic
+@import "generic/reset";
+/*
+ Base
+@import "base/elements";
+
+ Objects
+@import "objects/structure";
+
+// Components
+@import "components/header";
+@import "components/stuffs";
+@import "components/footer";*/
+
+// Trumps
+// --- nothing here (yet)
+
+// Generic
+@import "generic/reset";
+
+/*wrapper*/
+body{
+    font-family: "loraregular",serif;
+}
+.wrapper{
+
+}
+
+/*header*/
+header {
+    background-color: $bcgColorMainNav;
+}
+
+/*topbar*/
+.topbar {
+    background-color: white;
+    display: inline-block;
+    width: 100%;
+& h1 {
+    display: inline-block;
+}
+}
+
+/*logo*/
+.logo {
+    background: rgba(0, 0, 0, 0) url("../img/logo_baobab.png") repeat scroll 0 0;
+    display: block;
+    font-size: 0;
+    height: 58px;
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 235px;
+}
+
+/*languages*/
+.languages {
+    float: right;
+    margin-right: 20px;
+&__elt {
+    display: inline-block;
+    margin: 20px 0;
+}
+&__link {
+    display: inline-block;
+    padding: 8px 7px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $linkBorder;
+    background-color: $linkBcgColor;
+    border-bottom: 4px solid $linkBorder;
+    color: $textLink;
+&:hover, &:focus{
+    background-color: $linkHoverColor;
+    border-color: $linkHoverBorderColor;
+    }
+}
+}
+/*media*/
+.media {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 100px;
+}
+/*main-nav*/
+.main-nav {
+    background-color: $bcgColorMainNav;
+    display: inline-block;
+    width: 100%;
+&_list {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+}
+&__elt {
+    display: inline-block;
+}
+&__link {
+    display: inline-block;
+    padding: 20px 15px;
+    text-decoration: none;
+    color: $linkBorder;
+    font-size: 16px;
+&:hover, &:focus{
+    color: $linkHoverColor;
+    }
+&--icon{
+&-home::before{
+font-family: "Glyphs";
+font-size: 24px;
+content: " ";
+}
+&-posts::before{
+font-family: "Glyphs";
+font-size: 24px;
+content: " ";
+}
+&-about::before{
+font-family: "Glyphs";
+font-size: 24px;
+content: " ";
+}
+&-short::before{
+font-family: "Glyphs";
+font-size: 24px;
+content: " ";
+}
+&-tuto::before{
+font-family: "Glyphs";
+font-size: 24px;
+content: " ";
+}
+&-donation::before{
+font-family: "Glyphs";
+font-size: 24px;
+content: " ";
+}
+&-contact::before{
+font-family: "Glyphs";
+font-size: 24px;
+content: " ";
+}
+
+}
+}
+}
+/*phrase*/
+.phrase {
+    color: $textLink;
+    display: block;
+    margin: 100px auto 0;
+    max-width: 860px;
+&__heading {
+    color: white;
+    font-family: alfaslab;
+    font-size: 36px;
+    //font-weight: 700;
+    margin-bottom: 20px;
+}
+&__content{
+    width: 460px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+&__author {
+    margin-top: 20px;
+    text-align: right;
+    width: 340px;
+}
+}
+/*bouton-callout*/
+.bouton__callout {
+    color: $textLink;
+    display: block;
+    float: right;
+    font-size: 20.4px;
+    padding: 17px 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/*section*/
+section {
+    color: $textColor;
+    display: inline-block;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    width: 100%;
+}
+/*collectif*/
+.collectif {
+&__descriptif {
+    display: block;
+    line-height: 1.5;
+    max-width: 460px;
+}
+&__image{
+    float: right;
+    margin-left: 40px;
+}
+}
+/*actualites*/
+.actualites {
+&__article {
+    background-color: $backgroundColor;
+    border-radius: 4px;
+    color: $textColor;
+    display: inline-block;
+    padding: 20px;
+    width: 300px;
+    border: 1px solid #c2c2c2;
+    min-height: 332px;
+    vertical-align: top;
+& + & {
+    margin-left: 20px;
+    }
+}
+&__subheading {
+    color: $subheadingColor;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+&__descriptif {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+&__lire {
+    background-color: $linkBcgColor;
+    border-bottom: 3px solid $linkBorder;
+    color: $textLink;
+    display: inline-block;
+    float: right;
+    padding: 7px 10px;
+    text-decoration: none;
+}
+}
+/*diffusions*/
+
+/*diffusion*/
+.diffusion{
+    background-color: $backgroundColor;
+    border: 1px solid #c2c2c2;
+    border-radius: 6px;
+    display: inline-block;
+    line-height: 1.5;
+    padding-bottom: 20px;
+    width: 290px;
+    margin-bottom: 50px;
+&__figure{
+    margin: 10px;
+}
+&__imagelieu {
+    width: 270px;
+}
+& + &{
+    margin-left: 20px;
+}
+&__details{
+    margin: 10px 20px;
+}
+}
+
+/*vieuw link*/
+.vieuw__link {
+    background-color: $linkBcgColor;
+    border-bottom: 3px solid $linkBorder;
+    color: $textLink;
+    float: right;
+    margin-top: 20px;
+    padding: 4px 10px;
+    text-decoration: none;
+&--hover:hover, &--hover:focus {
+    background-color: $linkHoverColor;
+    border-bottom-color: $linkHoverBorderColor;
+}
+&--clear-both{
+    clear: both;
+}
+}
+
+/*footer*/
+.footer{
+    display: block;
+    margin: 30px auto 0;
+    max-width: 940px;
+&__heading{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+&-nav{
+    float: left;
+    line-height: 2;
+    list-style: none;
+    margin-right: 40px;
+    list-style: none;
+&__elt{
+    margin-bottom: 10px;
+}
+&__link{
+    border-bottom: 2px solid;
+    color: #205d86;
+    padding-bottom: 5px;
+    text-decoration: none;
+&:hover, &:focus{
+    color: $linkHoverColor;
+}
+}
+}
+}
+
+
+/*carte*/
+.carte{
+    display: inline-block;
+    line-height: 2;
+    list-style: none;
+}
+/*aides nous*/
+
+.aides-nous {
+    float: right;
+    line-height: 2;
+    list-style: none;
+    margin-left: 55px;
+    width: 255px;
+}
+
+/*contact footer*/
+.contact {
+    clear: both;
+    line-height: 2;
+    list-style: outside none none;
+    margin: 0 auto 0 160px;
+    max-width: 580px;
+&__elt + li {
+    display: inline-block;
+    margin-right: 15px;
+    }
+&--icon-email::before{
+    color: $linkBorder;
+    font-family: "Glyphs";
+    font-size: 29.2px;
+    content: " ";
+}
+&--icon-tel::before{
+    color: $linkBorder;
+    font-family: "Glyphs";
+    font-size: 29.2px;
+    content: " ";
+}
+&--icon-waap::before{
+    color: $linkBorder;
+    font-family: "Glyphs";
+    font-size: 29.2px;
+    content: " ";
+}
+&--icon-face::before{
+    color: $linkBorder;
+    font-family: "Glyphs";
+    font-size: 37.1px;
+    content: " ";
+}
+&--icon-tweet::before{
+    color: $linkBorder;
+    font-family: "Glyphs";
+    font-size: 37.1px;
+    content: " ";
+}
+&--icon-insta::before{
+    color: $linkBorder;
+    font-family: "Glyphs";
+    font-size: 37.1px;
+    content: " ";
+}
+&--icon-alone{
+    display: inline-block;
+    text-decoration: none;
+}
+&--icon-hover:hover::before, &--icon-hover:focus::before{
+    color: $linkHoverColor;
+}
+&--screen-reader{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+}
+
+//cta-small--blue
+.cta{
+    text-decoration: none;
+    margin-left: 20px;
+    display: inline-block;
+&--small{
+    float: right;
+    padding: 4px 10px;
+}
+&--medium{
+    padding: 12.6px 22px;
+}
+&--right{
+    float: right;
+}
+&--blue{
+    background-color: $linkBcgColor;
+    border-bottom: 5px solid $linkBorder;
+    color: $textLink;
+    margin-top: 40px;
+    font-size: $large;
+}
+&--yellow{
+    background-color: $ctaLinkColor;
+    border-bottom: 5px solid $ctaLinkBorderColor;
+    margin-top: 40px;
+    color: $textLink;
+    text-transform: uppercase;
+&:hover, &:focus{
+    background-color: darken($ctaLinkColor,5%);
+    border-bottom-color: darken($ctaLinkBorderColor,8%);
+}
+}
+&--hover:hover, &--hover:focus{
+    background-color: $linkHoverColor;
+    border-bottom-color: $linkHoverBorderColor;
+}
+}
+
+/*section__content*/
+.section{
+&__heading {
+    display: block;
+    font-size: 32.9px;
+    margin-bottom: 20px;
+    max-width:570px;
+    font-weight: 100;
+&--alfaslab{
+    color: $headersColor;
+    font-family: alfaslab;
+}
+&--blue{
+    color: $headersColorBlue;
+}
+&--center{
+    text-align: center;
+}
+&--mabo{
+    margin-bottom: 20px;
+}
+}
+&__container{
+    margin: 0 auto;
+    max-width: 950px;
+}
+&--first-bcg{
+    background-image: url('../img/croslines.png');
+}
+
+&--second-bcg{
+    background-image:url('../img/clouds.png');
+}
+
+&--third-bcg{
+    background-image:url('../img/lines.png');
+}
+&--first-clr{
+    background-color: #EFF0F1;
+}
+&--bor-bottom{
+    border-bottom: 1px solid black;
+}
+}
+
+// Page articles
+.articles{
+&__container {
+    margin: 0 auto;
+    max-width: 940px;
+    position: relative;
+    overflow: hidden;
+}
+}
+
+.article {
+    margin-bottom: 100px;
+    max-width: 700px;
+    overflow: hidden;
+&__heading{
+    float: right;
+    width: 380px;
+    font-size: 32.9px;
+    margin-bottom: 20px;
+}
+&__plublished {
+    color: slategrey;
+    margin-bottom: 20px;
+}
+&__container{
+    max-width: 940px;
+}
+&__content {
+    float: right;
+    line-height: 1.5;
+    margin-left: 20px;
+    width: 380px;
+}
+&__image {
+    width: 300px;
+    margin-bottom: 50px;
+}
+&__p--margin p {
+    margin-bottom: 10px;
+}
+}
+
+//Categorie
+.categorie {
+    background-color: #f5f5f5;
+    border: 1px solid #c2c2c2;
+    line-height: 1.5;
+    padding: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 200px;
+&__heading{
+    color: #143b55;
+}
+&-nav{
+    list-style: none;
+&__elt{
+    margin-bottom: 10px;
+}
+&__link{
+    border-bottom: 2px solid;
+    color: #205d86;
+    padding-bottom: 5px;
+    text-decoration: none;
+&:hover, &:focus{
+    color: $linkHoverColor;
+}
+}
+}
+}
+
+//gallery section
+.gallery{
+&__list{
+    margin-bottom: 50px;
+}
+&__elt{
+    display: inline-block;
+& a {
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-top: -53px;
+    text-decoration: none;
+}
+}
+&__elt + li{
+    margin-left: 20px;
+}
+&__name {
+    display: block;
+}
+&__place {
+    font-size: 14px;
+}
+}
+
+//Page article
+.page-article{
+    max-width: 860px;
+&__heading{
+    float: right;
+    width: 540px;
+}
+&__content{
+    float: right;
+    line-height: 1.5;
+    margin-left: 20px;
+    width: 540px;
+}
+}
+
+//page apropos
+.apropos-article{
+    max-width: 860px;
+&__heading{
+    float: right;
+    width: 540px;
+}
+&__content{
+    float: right;
+    line-height: 1.5;
+    margin-left: 20px;
+    width: 540px;
+}
+}
+
+.projet{
+&__links {
+    float: right;
+}
+}
+
+//page courtsmetrages
+.page-court {
+        float: left;
+        width: 460px;
+        display: inline-block;
+& + &{
+    margin-left: 20px;
+}
+&__heading {
+    color: $headersColorBlue;
+    font-size: 20.4px;
+    margin-bottom: 20px;
+}
+&__content{
+    float: right;
+    margin-left: 20px;
+    max-width: 220px;
+    display: inline-block;
+}
+&__liste {
+    list-style: none;
+}
+&__elt {
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+&__figure{
+    display: inline-block;
+}
+&__image{
+    width: 220px;
+}
+&--fbold{
+    font-weight: bold;
+}
+}
+
+//single court
+.single-court{
+    display: inline-block;
+&__container {
+    margin: 0 auto;
+    max-width: 940px;
+}
+&__content {
+    float: right;
+    margin-left: 20px;
+}
+&__figure {
+    display: inline-block;
+    margin-top: -160px;
+& img {
+    border: 5px solid white;
+    box-shadow: 0 0 1px 1px #a3a3a3;
+}
+}
+&__table {
+    line-height: 28px;
+    width: 600px;
+}
+&__th {
+    line-height: 1.5;
+    text-align: left;
+    width: 180px;
+}
+}
+
+//synopsis
+.synopsis{
+&__container{
+    margin: 0 auto;
+    max-width: 520px;
+}
+}
+
+//single theproject
+.single-theproject{
+    margin-bottom: 100px;
+    max-width: 860px;
+&__heading{
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 540px;
+ }
+&__about{
+    float: left;
+    line-height: 1.5;
+    margin-right: 20px;
+    width: 540px;
+}
+}
+
+//page animetoimeme
+.tutoriels{
+&__container {
+    margin: 0 auto;
+    max-width: 940px;
+}
+&-article {
+    max-width: 860px;
+&__content {
+    float: right;
+    line-height: 1.5;
+    margin-left: 20px;
+    width: 540px;
+    }
+&__heading {
+    float: right;
+    width: 540px;
+    }
+}
+}
+
+.tutoriel{
+&-article {
+    max-width: 780px;
+    overflow: hidden;
+    margin-bottom: 100px;
+&__content {
+    float: right;
+    line-height: 1.5;
+    margin-left: 20px;
+    width: 540px;
+}
+&__heading {
+    float: right;
+    width: 540px;
+    font-size: 32.9px;
+    margin-bottom: 20px;
+}
+&__image {
+    width: 220px;
+}
+}
+}
+
+//page soutien
+.soutiens{
+&-article {
+    max-width: 860px;
+    overflow: hidden;
+    margin-bottom: 100px;
+&__content {
+    float: right;
+    line-height: 1.5;
+    margin-left: 20px;
+    width: 540px;
+}
+&__heading {
+    float: right;
+    width: 540px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+&__image {
+    width: 300px;
+}
+}
+}
+//soutien
+.soutien{
+&-article {
+    max-width: 780px;
+    overflow: hidden;
+    margin-bottom: 100px;
+&__content {
+    float: right;
+    line-height: 1.5;
+    margin-left: 20px;
+    width: 540px;
+}
+&__image {
+    width: 220px;
+}
+}
+}
+
+
+
+// formulaire diffuser
+
+.diffuser{
+&__container {
+    margin: 0 auto;
+    max-width: 460px;
+}
+&__heading {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+&__content {
+    line-height: 1.5;
+}
+
+}
+.form{
+&__label{
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+&__input{
+    border: 1px solid #c2c2c2;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 20px;
+    width: 460px;
+    font-family: loaregular;
+&-email{
+        width: 460px;
+}
+}
+&__textarea {
+    border: 1px solid #c2c2c2;
+    border-radius: 4px;
+    font-family: loraregular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    height: 200px;
+    width: 460px;
+    overflow: auto;
+    padding: 10px;
+    resize: none;
+}
+&__submit{
+    background-color: $linkBcgColor;
+    border-color: $linkBorder;
+    border-style: none none solid;
+    border-width: medium medium 3px;
+    color: $textLink;
+    float: right;
+    margin-top: 20px;
+    padding: 4px 10px;
+    font-size: 16px;
+}
+}
+//youtube videoWrapper
+.yout-wrapper{
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+    margin-bottom: 20px;
+& iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+}
+
+//page contact
+.contact-page{
+&__container{
+    margin: 0 auto;
+    max-width: 940px;
+}
+&__followus {
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+}
+&__heading {
+    margin-bottom: 25px;
+&-contact{
+    font-size: 24.9px;
+    font-weight: 200;
+}
+}
+&-social{
+    margin-top: 30px;
+&__elt {
+    display: inline-block;
+    margin-right: 20px;
+}
+}
+&__carte {
+    display: inline-block;
+    margin-left: 53px;
+& li {
+   list-style: outside none none;
+}
+}
+&-info {
+    display: block;
+    margin: 37px auto 0;
+    width: 620px;
+&__elt {
+    display: inline-block;
+    margin-right: 20px;
+}
+}
+}
+
+//form seven style
+.wpcf7-not-valid-tip, .requis{
+    color: red;
+}
+
+.wpcf7-mail-sent-ok, .screen-reader-response{
+    color: $linkHoverColor;
+}
